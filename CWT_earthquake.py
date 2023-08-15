@@ -32,7 +32,7 @@ wave_name = 'cgau8' # cgau8 為 小波的名稱
 total_scale = 256 # 一共有多少個尺度 = 不同大小(壓縮大小)的小波基用作分析
 fc = pywt.central_frequency(wave_name)  # 小波的"中心頻率"
 print(fc)
-c_param = 2 * fc * total_scale
+c_param = 20 * fc * total_scale
 scales = c_param / np.arange(total_scale, 1, -1)
 # print(np.arange(total_scale, 1, -1))
 
