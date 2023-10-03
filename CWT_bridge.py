@@ -28,7 +28,7 @@ data_1 = data[:,2]
 
 
 # 進行連續小波變換
-wave_name = 'cgau8' # cgau8 為 小波的名稱
+wave_name = 'morl' # cgau8 為 小波的名稱
 total_scale = 256 # 一共有多少個尺度 = 不同大小(壓縮大小)的小波基用作分析
 fc = pywt.central_frequency(wave_name)  # 小波的"中心頻率" : 該小波的主要頻率
 # 中心頻率 = 母小波基的中心頻率 / 尺度(scale伸縮大小) * 取樣間隔(sampling_period or interval)
